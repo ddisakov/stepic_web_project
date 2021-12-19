@@ -1,0 +1,86 @@
+[2021-12-19 20:28:56 +0300] [73453] [INFO] Starting gunicorn 20.0.4
+[2021-12-19 20:28:56 +0300] [73453] [INFO] Listening at: http://127.0.0.1:8080 (73453)
+[2021-12-19 20:28:56 +0300] [73453] [INFO] Using worker: sync
+[2021-12-19 20:28:56 +0300] [73455] [INFO] Booting worker with pid: 73455
+[2021-12-19 20:28:56 +0300] [73455] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 383, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'ask.wsgi'
+[2021-12-19 20:28:56 +0300] [73455] [INFO] Worker exiting (pid: 73455)
+[2021-12-19 20:28:56 +0300] [73453] [INFO] Shutting down: Master
+[2021-12-19 20:28:56 +0300] [73453] [INFO] Reason: Worker failed to boot.
+[2021-12-19 21:09:25 +0300] [74511] [INFO] Starting gunicorn 20.0.4
+[2021-12-19 21:09:25 +0300] [74511] [INFO] Listening at: http://127.0.0.1:8080 (74511)
+[2021-12-19 21:09:25 +0300] [74511] [INFO] Using worker: sync
+[2021-12-19 21:09:25 +0300] [74513] [INFO] Booting worker with pid: 74513
+[2021-12-19 21:09:25 +0300] [74513] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python3/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 383, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hello'
+[2021-12-19 21:09:25 +0300] [74513] [INFO] Worker exiting (pid: 74513)
+[2021-12-19 21:09:25 +0300] [74511] [INFO] Shutting down: Master
+[2021-12-19 21:09:25 +0300] [74511] [INFO] Reason: Worker failed to boot.
+[2021-12-19 21:20:20 +0300] [75057] [INFO] Starting gunicorn 20.0.4
+[2021-12-19 21:20:20 +0300] [75057] [INFO] Listening at: http://127.0.0.1:8080 (75057)
+[2021-12-19 21:20:20 +0300] [75057] [INFO] Using worker: sync
+[2021-12-19 21:20:20 +0300] [75059] [INFO] Booting worker with pid: 75059
+[2021-12-19 21:20:28 +0300] [75057] [INFO] Handling signal: int
+[2021-12-19 21:20:28 +0300] [75059] [INFO] Worker exiting (pid: 75059)
+[2021-12-19 21:20:28 +0300] [75057] [INFO] Shutting down: Master
+[2021-12-19 21:21:56 +0300] [75130] [INFO] Starting gunicorn 20.0.4
+[2021-12-19 21:21:56 +0300] [75130] [INFO] Listening at: http://127.0.0.1:8080 (75130)
+[2021-12-19 21:21:56 +0300] [75130] [INFO] Using worker: sync
+[2021-12-19 21:21:56 +0300] [75132] [INFO] Booting worker with pid: 75132
+[2021-12-19 21:23:18 +0300] [75130] [INFO] Handling signal: int
+[2021-12-19 21:23:18 +0300] [75132] [INFO] Worker exiting (pid: 75132)
+[2021-12-19 21:23:18 +0300] [75130] [INFO] Shutting down: Master
+[2021-12-19 21:23:58 +0300] [75404] [INFO] Starting gunicorn 20.0.4
+[2021-12-19 21:23:58 +0300] [75404] [INFO] Listening at: http://127.0.0.1:8080 (75404)
+[2021-12-19 21:23:58 +0300] [75404] [INFO] Using worker: sync
+[2021-12-19 21:23:58 +0300] [75406] [INFO] Booting worker with pid: 75406
+[2021-12-19 21:23:58 +0300] [75406] [INFO] Worker exiting (pid: 75406)
+[2021-12-19 21:23:58 +0300] [75404] [INFO] Shutting down: Master
+[2021-12-19 21:23:58 +0300] [75404] [INFO] Reason: App failed to load.
+[2021-12-19 21:24:05 +0300] [75411] [INFO] Starting gunicorn 20.0.4
+[2021-12-19 21:24:05 +0300] [75411] [INFO] Listening at: http://127.0.0.1:8080 (75411)
+[2021-12-19 21:24:05 +0300] [75411] [INFO] Using worker: sync
+[2021-12-19 21:24:05 +0300] [75413] [INFO] Booting worker with pid: 75413
+[2021-12-19 21:24:27 +0300] [75411] [INFO] Handling signal: int
+[2021-12-19 21:24:28 +0300] [75413] [INFO] Worker exiting (pid: 75413)
+[2021-12-19 21:24:28 +0300] [75411] [INFO] Shutting down: Master
